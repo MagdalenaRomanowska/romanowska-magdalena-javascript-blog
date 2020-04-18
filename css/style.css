@@ -110,4 +110,36 @@ body {
 .post-tags p {
   margin: 0 10px 0 0;
 }
+
+.tags .tag-size-1 {
+  font-size: 16px;
+}
+
+.tags .tag-size-2 {
+  font-size: 18px;
+}
+
+.tags .tag-size-3 {
+  font-size: 20px;
+}
+
+.tags .tag-size-4 {
+  font-size: 22px;
+}
+
+.tags .tag-size-5 {
+  font-size: 24px;
+}
+
+.tags .tag-size-6 {
+  font-size: 28px;
+}
+
+.tags .tag-size-7 {
+  font-size: 32px;
+}
+
+.tags li {
+  display: inline-block;
+}
 /*# sourceMappingURL=style.css.map */
