@@ -149,3 +149,16 @@ body {
     display: inline-block;
   }
 }
+
+.authors {
+  li {
+    display: inline-block;
+  }
+}
+
+.authors .tag-size-1{
+  font-size: 16px;
+}
+.authors .tag-size-6{
+  font-size: 24px;
+}
