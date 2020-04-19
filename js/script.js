@@ -262,11 +262,11 @@
       console.log("author: ", author);
       /* generate HTML of the link */
       const linkHTML =
-        '<li><a href="#author-' +
+        '<a href="#author-' +
         author +
         '"><span>' +
         author +
-        "</span></a></li>";
+        "</span></a>";
       console.log("linkHTML: ", linkHTML);
       html = html + linkHTML; /* insert link */
       console.log("html: ", html);
