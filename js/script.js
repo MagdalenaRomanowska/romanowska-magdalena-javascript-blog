@@ -171,7 +171,6 @@
     console.log("tagsParams:", tagsParams);
     //let allTagsHTML = "";
     const allTagsData = { tags: [] };
-
     /* [NEW] START LOOP: for each tag in allTags: */
     for (let tag in allTags) {
       /* [NEW] generate code of a link and add it to allTagsHTML */
@@ -195,6 +194,7 @@
     //tagList.innerHTML = allTagsHTML;
     tagList.innerHTML = templates.tagCloudLink(allTagsData);
     console.log("allTagsData:", allTagsData);
+        
   }
 
   generateTags();
@@ -239,6 +239,13 @@
     for (let linkToTag of linksToTags) {
       /* add tagClickHandler as event listener for that link */
       linkToTag.addEventListener("click", tagClickHandler);
+      /* END LOOP: for each link */
+    }
+    const linksToTags2 = document.querySelectorAll(".tags a");
+    /* START LOOP: for each link */
+    for (let linkToTag2 of linksToTags2) {
+      /* add tagClickHandler as event listener for that link */
+      linkToTag2.addEventListener("click", tagClickHandler);
       /* END LOOP: for each link */
     }
   }
@@ -372,11 +379,19 @@
     const linksToAuthor = document.querySelectorAll(".post-author a");
     /* START LOOP: for each link */
     for (let linkToAuthor of linksToAuthor) {
-      /* add tagClickHandler as event listener for that link */
+      /* add authorClickHandler as event listener for that link */
       linkToAuthor.addEventListener("click", authorClickHandler);
+      /* END LOOP: for each link */
+    }
+    const linksToAuthor2 = document.querySelectorAll(".authors a");
+    /* START LOOP: for each link */
+    for (let linkToAuthor2 of linksToAuthor2) {
+      /* add authorClickHandler as event listener for that link */
+      linkToAuthor2.addEventListener("click", authorClickHandler);
       /* END LOOP: for each link */
     }
   }
 
   addClickListenersToAuthors();
+  
 }
